@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('purchasing_details', function (Blueprint $table) {
             $table->id();
-            $table->varchar('id_product');
+            $table->bigInteger('id_product');
             $table->string('product_name');
-            $table->date('purchasing_price');
+            $table->integer('purchasing_price');
             $table->integer('qty');
             $table->integer('subtotal');
             $table->timestamps();
